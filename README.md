@@ -1,12 +1,11 @@
 # searxng-docker
 
-Create a new SearXNG  instance in five minutes using Docker
+Create a new SearXNG  instance using Docker, does not include a reverse proxy.
 
 ## What is included ?
 
 | Name | Description | Docker image | Dockerfile |
 | -- | -- | -- | -- |
-| [Caddy](https://github.com/caddyserver/caddy) | Reverse proxy (create a LetsEncrypt certificate automatically) | [caddy/caddy:2-alpine](https://hub.docker.com/_/caddy) | [Dockerfile](https://github.com/caddyserver/caddy-docker) |
 | [SearXNG](https://github.com/searxng/searxng) | SearXNG by itself | [searxng/searxng:latest](https://hub.docker.com/r/searxng/searxng) | [Dockerfile](https://github.com/searxng/searxng/blob/master/Dockerfile) |
 | [Redis](https://github.com/redis/redis) | In-memory database | [redis:alpine](https://hub.docker.com/_/redis) | [Dockerfile-alpine.template](https://github.com/docker-library/redis/blob/master/Dockerfile-alpine.template) |
 
@@ -64,4 +63,3 @@ docker-compose up
 
 To update this `docker-compose.yml` file:
 
-Check out the newest version on github: [searxng/searxng-docker](https://github.com/searxng/searxng-docker).
